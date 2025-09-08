@@ -1,0 +1,320 @@
+:root {
+    --bg: rgb(250, 250, 250);
+    --border: rgb(224, 224, 224);
+    --green: #00DBB6;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Mitr", sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+main{
+    flex-grow: 1;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    width: 80%;
+}
+header{
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.member a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-container{
+    display: flex;
+    gap: 10px;
+}
+
+.logo-container > img{
+    width: 30px;
+}
+
+.logo-container > h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.font-bold{
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+}
+li > a, .user > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+}
+.search i, .cart i {
+    color: rgb(117, 114, 114);
+    size: 10px;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+.cart {
+    position: relative;
+    display: inline-block;
+}
+.cart .badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: normal;
+    border-radius: 50%;
+    padding: 3px 6px;
+}
+.login {
+    padding-right: 15px;
+    border-right: 1px solid var(--border);
+}
+.sign-up {
+    padding-left: 15px;
+}
+.member a {
+    font-size: 15px;
+}
+
+
+.login {
+    padding-right: 15px;
+    border-right: 1px solid var(--border);
+}
+
+.sign-up{
+    padding-left: 15px;
+}
+
+.subtotal-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.promo-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.order-lists {
+    width: 83%;
+}
+.order-lists {
+    display: flex;
+    gap: 20px;
+}
+
+.product, .order-info {
+    flex-grow: 1;
+}
+
+.order-info{
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    align-self: flex-start;
+    
+}
+
+.subtotal-container > p:first-child {
+    color:rgb(150, 150, 150);
+}
+
+.promo-container > button {
+    color: var(--green);
+    background-color: transparent;
+    font-weight: 500;
+    border: 2px solid var(--green);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.promo-container > input {
+    border: 1px solid var(--border);
+    padding-left: 5px;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: transparent;
+    
+}
+.promo-container > i{
+    color: var(--green);
+    font-size: 20px;
+    
+}
+.promo-container > input::placeholder {
+    color: rgb(179, 179, 179);
+    
+}
+
+.total-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+    border-top: 1px solid var(--border);
+}
+
+.total-row >h4{
+    color: var(--green);
+    font-size: 20px;
+}
+
+.total-container > button {
+    background-color: var(--green);
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 10px;
+    padding-block: 15px;
+    margin-top: 30px;
+}
+.products{
+    flex-grow: 1;
+}
+.product1, .product2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    align-self: stretch;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.product1 > i , .product2 > i {
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    padding: 5px;
+}
+.bullet-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.bullet {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--border);
+}
+.bullet-green {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--green);
+}
+.option-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+select:focus{
+    border: 1px solid var(--green);
+}
+option:hover{
+    background-color: grey;
+}
+.product1 i, .product2 i {
+    font-size: 30px;
+    cursor: pointer;
+}
+.product1-detail > p, .product2-detail > p{
+    margin-top: 15px;
+}
+
+.product1-detail > h4, .product2-detail > p, .product2-detail > h4{
+    font-weight: 400;
+    font-size: 18px;
+   
+}
+.product1-detail, .product2-detail {
+    flex-basis: 180px;
+}
+
+.product1-name, .product2-name{
+    border-radius: 10px;
+  
+}
+
+.product1-name{
+    background: linear-gradient(182deg,rgba(132, 217, 250, 1) 0%, rgb(73, 199, 221) 100%);
+    padding: 30px 10px;
+    color: white;
+}
+.product2-name{
+    background: linear-gradient(182deg,rgba(247, 220, 99, 1) 0%, rgba(224, 155, 70, 1) 100%);
+    padding: 30px 10px;
+    color: white;
+}
+main h1 {
+    margin-bottom: 50px;
+}
+select{
+    border: 1px solid var(--border);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.product1-name > i {
+    background-color: white;
+    color: #7ED7F7;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.product2-name > i {
+    background-color: white;
+    color: #E5AA4D;
+    padding: 2px;
+    border-radius: 10px;
+}
+.product1-name > h4, .product1-name > p, .product2-name > p, .product2-name > h4 {
+    margin-top: 10px;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+button, select {
+    cursor: pointer;
+}
